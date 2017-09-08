@@ -50,7 +50,7 @@ function init() {
   // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
   var mapOptions = {
     // How zoomed in you want the map to start at (always required)
-    zoom: 15,
+    zoom: 4,
 
     // The latitude and longitude to center the map (always required)
     center: new google.maps.LatLng(38.648789, -90.310824), // New York
@@ -181,9 +181,39 @@ function init() {
 
   // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
   var image = 'img/map-marker.svg';
-  var myLatLng = new google.maps.LatLng(38.648789, -90.310824);
+  var myLatLng = new google.maps.LatLng(38.6488, -90.3108);
   var beachMarker = new google.maps.Marker({
     position: myLatLng,
+    map: map,
+    icon: image
+  });
+  var CaseCompTwo = new google.maps.LatLng(42.3398, -71.0892);
+  var beachMarkerTwo = new google.maps.Marker({
+    position: CaseCompTwo,
+    map: map,
+    icon: image
+  });
+  var CaseCompThree = new google.maps.LatLng(39.1761, -86.5131);
+  var beachMarkerThree = new google.maps.Marker({
+    position: CaseCompThree,
+    map: map,
+    icon: image
+  });
+  var CaseCompFour = new google.maps.LatLng(34.0224, -118.2851);
+  var beachMarkerFour = new google.maps.Marker({
+    position: CaseCompFour,
+    map: map,
+    icon: image
+  });
+  var CaseCompFive = new google.maps.LatLng(30.2841, -97.7379);
+  var beachMarkerFive = new google.maps.Marker({
+    position: CaseCompFive,
+    map: map,
+    icon: image
+  });
+  var CaseCompSix = new google.maps.LatLng(46.5553, -122.3035);
+  var beachMarkerSix = new google.maps.Marker({
+    position: CaseCompSix,
     map: map,
     icon: image
   });
